@@ -21,6 +21,10 @@ elDarkModeButton.addEventListener('click', function () {
   document.body.classList.add('dark-mode')
 })
 
+elDarkModeButton.addEventListener('dblclick', function () {
+  document.body.classList.remove('dark-mode')
+})
+
 const elLightModeButton = document.querySelector('.site-header-light');
 elLightModeButton.addEventListener('click', function () {
   document.body.classList.remove('dark-mode')
