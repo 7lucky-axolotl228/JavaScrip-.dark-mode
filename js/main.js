@@ -8,12 +8,20 @@ console.log(phone_memory);
 console.log(phone_shot); */
 
 
-
-
-
-const elLogoLink = document.querySelector('.site-header-logo');
+/* const elLogoLink = document.querySelector('.site-header-logo');
 const elChangeLogoTextButton = document.querySelector('.change-logo-text-button');
 
 elChangeLogoTextButton.addEventListener('click', function () {
   elLogoLink.textContent = 'Something';
+}) */
+
+
+const elDarkModeButton = document.querySelector('.site-header-dark');
+elDarkModeButton.addEventListener('click', function () {
+  document.body.classList.add('dark-mode')
+})
+
+const elLightModeButton = document.querySelector('.site-header-light');
+elLightModeButton.addEventListener('click', function () {
+  document.body.classList.remove('dark-mode')
 })
